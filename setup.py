@@ -3,8 +3,8 @@
 from setuptools import setup
 
 setup(
-    name='Unitify',
-    version='1.0.0',
+    name='unitify',
+    version='1.0.1',
     description='Replaces all nouns in a text with the word "unit"',
     author='Philip Goto',
     author_email='philip.goto@gmail.com',

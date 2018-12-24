@@ -1,12 +1,12 @@
 import spacy
 
-nlp = spacy.load("en_core_web_sm")
+NLP = spacy.load("en_core_web_sm")
 
 
 def unitify(line):
     unit = ""
 
-    for token in nlp(line):
+    for token in NLP(line):
         if token.tag_ == 'NN':
             word = 'unit'
         elif token.tag_ == 'NNS':
