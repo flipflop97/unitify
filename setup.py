@@ -4,7 +4,7 @@ from setuptools import setup
 
 setup(
     name='unitify',
-    version='1.0.1',
+    version='1.0.2',
     description='Replaces all nouns in a text with the word "unit"',
     author='Philip Goto',
     author_email='philip.goto@gmail.com',
@@ -15,5 +15,11 @@ setup(
         'console_scripts': [
             'unitify=unitify.__main__:main'
         ]
-    }
+    },
+    install_requires=[
+        'spacy',
+    ],
+    dependency_links=[
+        'https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-2.0.0/en_core_web_sm-2.0.0.tar.gz#egg=en_core_web_sm-2.0.0',
+    ],
 )
