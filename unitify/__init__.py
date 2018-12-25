@@ -12,10 +12,13 @@ def unitify(line):
         elif token.tag_ == 'NNS':
             word = 'units'
         else:
-            word = token.text
+            unit += token.text + token.whitespace_
+            continue
 
         if token.is_title:
             word = word.capitalize()
+        elif token.is_upper:
+            word = word.upper()
 
         unit += word + token.whitespace_
 

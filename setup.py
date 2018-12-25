@@ -1,21 +1,17 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
 
 from setuptools import setup
 
 setup(
     name='unitify',
-    version='1.0.2',
+    version='1.0.3',
     description='Replaces all nouns in a text with the word "unit"',
     author='Philip Goto',
     author_email='philip.goto@gmail.com',
     url='https://github.com/flipflop97/unitify',
     license='MIT',
     packages=['unitify'],
-    entry_points = {
-        'console_scripts': [
-            'unitify=unitify.__main__:main'
-        ]
-    },
+    scripts=['bin/unitify'],
     install_requires=[
         'spacy',
     ],
